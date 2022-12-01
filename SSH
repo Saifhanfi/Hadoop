@@ -1,0 +1,15 @@
+update system
+$ sudo apt-get update
+
+install openssh
+$ sudo apt-get install openssh-server openssh-client
+
+Generate RSA keypair
+$ ssh-i keygen
+
+Add it to authorised keys
+$ cd .ssh
+$ cat id_rsa.pub >> authorised_keys
+
+ssh to localhost
+$ ssh localhost
